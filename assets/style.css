@@ -1,6 +1,6 @@
 body {
     background-image: url("./images/crossword.png");
-    font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 #main-container {
@@ -55,13 +55,16 @@ body {
 #title-box {
     background-color: #F67D21;
     color: white;
-    font-size: 46pt;
     padding: 20px;
     position: relative;
 }
 
+#title {
+    font-family: 'Kalam', cursive;
+    font-size: 46pt;
+}
+
 #subtitle {
-    font-family: 'Share Tech', sans-serif;
     font-size: 16pt;
     position: absolute;
     bottom: 65px;
@@ -82,7 +85,7 @@ body {
     position: relative;
 }
 
-.portfolio-img {
+#portfolio-img {
     z-index: 1;
 }
 

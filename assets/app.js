@@ -5,7 +5,7 @@ $(document).ready(function() {
 var subTitles = [
     "Entrepreneur",
     "Product Manager",
-    "Full Stack Web Developer",
+    "Web Developer",
     "Team Leader",
     "MBA with Honors",
     "Competitive Swimmer",
@@ -46,13 +46,24 @@ var portfolioImages = [
     "xfinity.jpg"
 ];
 
-var indexNumber = Math.floor(Math.random()*portfolioImages.length);
-var shownImage = portfolioImages[indexNumber];
+var indexNumber;
+var shownImage;
 
-var populatePortfolio = function() {
-    $("#portfolio-box").html("<img class='portfolio-img animated fadeIn' src='./assets/images/portfolio/" + shownImage + "'><a href='#'><img id='left-arrow' src='./assets/images/left-arrow.png'></a><a href='#'><img id='right-arrow' src='./assets/images/right-arrow.png'></a>");
+var getRandomImage = function() {
+    indexNumber = Math.floor(Math.random()*portfolioImages.length);
+    shownImage = portfolioImages[indexNumber];
 };
 
+var populatePortfolio = function() {
+    $("#portfolio-box").html("<img class='animated fadeIn' id='portfolio-img' src='./assets/images/portfolio/" + shownImage + "'><a href='#'><img id='left-arrow' src='./assets/images/left-arrow.png'></a><a href='#'><img id='right-arrow' src='./assets/images/right-arrow.png'></a>");
+};
+
+var shufflePortfolio = function() {
+    setInterval(function() {
+        getRandomImage();
+        $("#portfolio-img").attr("src", "./assets/images/portfolio/" + shownImage);
+    }, 24000);
+};
 
 $(document).on("click", "#left-arrow", function(){
     if (portfolioImages.indexOf(shownImage) === 0) {
@@ -76,6 +87,8 @@ $(document).on("click", "#right-arrow", function(){
     populatePortfolio();
 });
 
+getRandomImage();
 populatePortfolio();
+shufflePortfolio();
 
 });
