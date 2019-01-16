@@ -3,6 +3,11 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+a, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
 #main-container {
     width: 1080px;
     height: 640px;
@@ -18,9 +23,6 @@ body {
 .top-box {
     width: 270px;
     height: 270px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 .bottom-box {
@@ -28,13 +30,22 @@ body {
     height: 370px;
 }
 
+.top-box, .bottom-box {
+    color: white;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 #menu-box {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
 }
 
 .menu-item {
-    color: white;
+    cursor: pointer;
     width: 135px;
     height: 90px;
     padding: 10px;
@@ -45,7 +56,6 @@ body {
 
 .lighter-menu-item {
     background-color: #0E6C91;
-
 }
 
 .darker-menu-item {
@@ -89,18 +99,19 @@ body {
     z-index: 1;
 }
 
-#left-arrow {
+#left-arrow, #right-arrow {
+    cursor: pointer;
     position: absolute;
     top: 150px;
-    left: 5px;
     z-index: 2;
 }
 
+#left-arrow {
+    left: 5px;
+}
+
 #right-arrow {
-    position: absolute;
-    top: 150px;
     right: 5px;
-    z-index: 2;
 }
 
 #toolbox-box {
@@ -114,4 +125,100 @@ body {
 .bottom-box, #portfolio-box {
     -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px -1px 9px 0px rgba(107,107,107,0); 
     box-shadow: 0px 10px 13px -7px #000000, -1px -1px 9px 0px rgba(107,107,107,0);
+}
+
+
+/* Responsiveness settings - three columns */
+
+@media screen and (max-width: 1080px) {
+
+    #main-container {
+        width: 810px;
+        position: relative;
+        margin: 10px;
+        top: 0;
+        left: 0;
+    }
+
+    #studies-box {
+        order: 6;
+    }
+
+    #career-box {
+        order: 7;
+        width: 540px;
+        height: 270px;
+        margin-bottom: 10px;
+    }
+
+    .bottom-box, #portfolio-box {
+        -webkit-box-shadow: none; 
+        box-shadow: none;
+    }
+
+}
+
+
+/* Responsiveness settings - two columns */
+
+@media screen and (max-width: 840px) {
+
+    #main-container {
+        width: 540px;
+    }
+    #menu-box {
+        order: 1;
+    }
+
+    #title-box {
+        order: 2;
+    }
+
+    #photo-box {
+        order: 3;
+    }
+
+    #studies-box {
+        order: 4;
+    }
+
+    #career-box {
+        order: 5;
+        width: 270px;
+        height: 370px;
+        margin-bottom: 0;
+    }
+
+    #toolbox-box {
+        order: 6;
+    }
+
+    #portfolio-box {
+        order: 7;
+    }
+
+}
+
+/* Responsiveness settings - one column */
+
+@media screen and (max-width: 570px) {
+
+    #main-container {
+        width: 270px;
+    }
+
+    #portfolio-box {
+        width: 270px;
+        height: 185px;
+    }
+
+    #portfolio-img {
+        width: 270px;
+        height: 185px;
+    }
+
+    #left-arrow, #right-arrow {
+        top: 70px;
+    }
+
 }

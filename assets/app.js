@@ -4,18 +4,15 @@ $(document).ready(function() {
 
 var subTitles = [
     "Entrepreneur",
-    "Product Manager",
     "Web Developer",
+    "Product Manager",
     "Team Leader",
-    "MBA with Honors",
-    "Competitive Swimmer",
-    "Ironman Triathlete",
-    "Certified AcroYogi"
+    "MBA with Honors"
 ];
 
 setTimeout(function() {
     $("#subtitle").html("<p class='animated fadeInUp'>" + subTitles[0] + "</p>");
-}, 500);
+}, 100);
 
 var i = 1;
 
@@ -55,14 +52,14 @@ var getRandomImage = function() {
 };
 
 var populatePortfolio = function() {
-    $("#portfolio-box").html("<img class='animated fadeIn' id='portfolio-img' src='./assets/images/portfolio/" + shownImage + "'><a href='#'><img id='left-arrow' src='./assets/images/left-arrow.png'></a><a href='#'><img id='right-arrow' src='./assets/images/right-arrow.png'></a>");
+    $("#portfolio-box").html("<img class='animated fadeIn' id='portfolio-img' src='./assets/images/portfolio/" + shownImage + "'><img id='left-arrow' src='./assets/images/left-arrow.png'><img id='right-arrow' src='./assets/images/right-arrow.png'>");
 };
 
 var shufflePortfolio = function() {
     setInterval(function() {
         getRandomImage();
         $("#portfolio-img").attr("src", "./assets/images/portfolio/" + shownImage);
-    }, 24000);
+    }, 15000);
 };
 
 $(document).on("click", "#left-arrow", function(){
