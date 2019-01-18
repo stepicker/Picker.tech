@@ -1,0 +1,87 @@
+body {
+    background-image: url("./images/crossword.png");
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#main-container {
+    width: 1080px;
+    margin: 10px auto 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu-bar {
+    width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#title-box {
+    width: 270px;
+    height: 90px;
+    background-color: #F67D21;
+    color: white;
+    position: relative;
+}
+
+#title {
+    font-family: 'Kalam', cursive;
+    font-size: 30pt;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#subtitle {
+    font-size: 14pt;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.menu-item {
+    cursor: pointer;
+    width: 135px;
+    height: 90px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.lighter-menu-item {
+    background-color: #0E6C91;
+}
+
+.darker-menu-item {
+    background-color: #0A627F;
+}
+
+#page-content {
+    width: 1080px;
+    background-color: white;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px -1px 9px 0px rgba(107,107,107,0); 
+    box-shadow: 0px 10px 13px -7px #000000, -1px -1px 9px 0px rgba(107,107,107,0);
+}
+
+#portfolio-container {
+    width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 500px;
+    padding: 20px;
+}
+
+.portfolio-img {
+    width: 500px;
+}

@@ -32,7 +32,7 @@ var loopSubTitles = function() {
 loopSubTitles();
 
 
-// Portfolio
+// Portfolio Loop on Home Page
  
 var portfolioImages = [
     "blockbuster.jpg",
@@ -87,5 +87,13 @@ $(document).on("click", "#right-arrow", function(){
 
 getRandomImage();
 populatePortfolio();
+
+
+// Portfolio Page
+
+for (var i = 0; i < portfolioImages.length; i++) {
+    $("#portfolio-container").prepend("<div class='portfolio-item'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[i] + "'></div>");
+}
+
 
 });
