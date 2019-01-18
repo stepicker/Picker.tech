@@ -32,7 +32,7 @@ a, a:visited {
 
 .top-box, .bottom-box {
     color: white;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -91,7 +91,6 @@ a, a:visited {
 #portfolio-box {
     width: 540px;
     height: 370px;
-    background-color: lightgray;
     position: relative;
 }
 
@@ -122,6 +121,68 @@ a, a:visited {
     background-color: #00A0FC;
 }
 
+.box-title {
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    margin: 15px;
+}
+
+#toolbox-box {
+    position: relative;
+}
+
+#html-img {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+}
+
+#bootstrap-img {
+    position: absolute;
+    top: 125px;
+    left: 85px;
+}
+
+#jquery-img {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
+
+#ajax-img {
+    position: absolute;
+    bottom: 150px;
+    right: 70px;
+}
+
+#json-img {
+    position: absolute;
+    bottom: 140px;
+    right: 15px;
+}
+
+#node-img {
+    position: absolute;
+    bottom: 70px;
+    left: 80px;
+}
+
+#scrum-img {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+#lean-img {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
 .bottom-box, #portfolio-box {
     -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px -1px 9px 0px rgba(107,107,107,0); 
     box-shadow: 0px 10px 13px -7px #000000, -1px -1px 9px 0px rgba(107,107,107,0);
@@ -135,7 +196,7 @@ a, a:visited {
     #main-container {
         width: 810px;
         position: relative;
-        margin: 10px;
+        margin: 10px auto 10px auto;
         top: 0;
         left: 0;
     }
@@ -148,7 +209,6 @@ a, a:visited {
         order: 7;
         width: 540px;
         height: 270px;
-        margin-bottom: 10px;
     }
 
     .bottom-box, #portfolio-box {
@@ -165,6 +225,7 @@ a, a:visited {
 
     #main-container {
         width: 540px;
+        margin: 10px auto 10px auto;
     }
     #menu-box {
         order: 1;
@@ -205,6 +266,7 @@ a, a:visited {
 
     #main-container {
         width: 270px;
+        margin: 10px auto 10px auto;
     }
 
     #portfolio-box {

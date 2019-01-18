@@ -7,12 +7,11 @@ var subTitles = [
     "Web Developer",
     "Product Manager",
     "Team Leader",
-    "MBA with Honors"
+    "MBA w/ Honors"
 ];
 
-setTimeout(function() {
-    $("#subtitle").html("<p class='animated fadeInUp'>" + subTitles[0] + "</p>");
-}, 100);
+
+$("#subtitle").html("<p class='animated fadeInUp'>" + subTitles[0] + "</p>");
 
 var i = 1;
 
@@ -55,12 +54,12 @@ var populatePortfolio = function() {
     $("#portfolio-box").html("<img class='animated fadeIn' id='portfolio-img' src='./assets/images/portfolio/" + shownImage + "'><img id='left-arrow' src='./assets/images/left-arrow.png'><img id='right-arrow' src='./assets/images/right-arrow.png'>");
 };
 
-var shufflePortfolio = function() {
-    setInterval(function() {
+var loopDuration = subTitles.length * 3000;
+
+var shufflePortfolio = setInterval(function() {
         getRandomImage();
         $("#portfolio-img").attr("src", "./assets/images/portfolio/" + shownImage);
-    }, 15000);
-};
+    }, loopDuration);
 
 $(document).on("click", "#left-arrow", function(){
     if (portfolioImages.indexOf(shownImage) === 0) {
@@ -71,6 +70,7 @@ $(document).on("click", "#left-arrow", function(){
     };
     shownImage = portfolioImages[indexNumber];
     populatePortfolio();
+    clearInterval(shufflePortfolio);
 });
 
 $(document).on("click", "#right-arrow", function(){
@@ -82,10 +82,10 @@ $(document).on("click", "#right-arrow", function(){
     };
     shownImage = portfolioImages[indexNumber];
     populatePortfolio();
+    clearInterval(shufflePortfolio);
 });
 
 getRandomImage();
 populatePortfolio();
-shufflePortfolio();
 
 });
