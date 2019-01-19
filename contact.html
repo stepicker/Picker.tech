@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <!-- Setting page title -->
+  <title>Stefano Picker - Contact</title>
+
+  <!-- Establishing character set -->
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!-- Linking CSS -->
+  <link rel="stylesheet" type="text/css" href="./assets/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/pages.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+  <!-- Linking Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+
+  <!-- Linking jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+</head>
+
+<body>
+
+<div id="main-container">
+
+    <div id="menu-bar">
+        <div class="animated rotateInUpLeft" id="title-box">
+        <div id="title">Stefano Picker</div>
+        <div id="subtitle"></div>
+        </div>
+        <a href="index.html"><div class="menu-item lighter-menu-item animated zoomIn" id="menu-home">Home</div></a>
+        <a href="portfolio.html"><div class="menu-item darker-menu-item animated zoomIn" id="menu-portfolio">Portfolio</div></a>
+        <a href="https://www.linkedin.com/in/stefanopicker/" target="_blank"><div class="menu-item lighter-menu-item animated zoomIn" id="menu-resume">Resume</div></a>
+        <a href="https://github.com/stepicker" target="_blank"><div class="menu-item darker-menu-item animated zoomIn" id="menu-code">Code</div></a>
+        <a href="https://twitter.com/picker" target="_blank"><div class="menu-item lighter-menu-item animated zoomIn" id="menu-tweets">Tweets</div></a>
+        <a href="contact.html"><div class="menu-item darker-menu-item animated zoomIn" id="menu-contact">Contact</div></a>
+    </div>
+        
+    <div class="animated fadeIn" id="page-content">
+        <div id="form-container">
+            <form id="contact-form" method="POST" action="https://formspree.io/picker@gmail.com">
+                <label for="name">Name</label>
+                <br>
+                <input name="name" type="text" placeholder="i.e. John Smith">
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input name="email" type="email" placeholder="i.e. you@example.com">
+                <br>
+                <label for="message">Message</label>
+                <br>
+                <textarea name="message" placeholder="Please type your message here..."></textarea>
+                <br>
+                <button class="button" type="submit" id="submit-button">Submit</button>
+                </form>
+        </div>
+    </div>
+
+</div>
+
+<!-- Linking scripts -->
+<script type="text/javascript" src="./assets/app.js"></script>
+
+</body>
+
+</html>
