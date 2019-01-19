@@ -35,11 +35,31 @@ loopSubTitles();
 // Portfolio Loop on Home Page
  
 var portfolioImages = [
-    "blockbuster.jpg",
-    "la3.jpg",
-    "tv-connect.jpg",
-    "home-hub.jpg",
-    "xfinity.jpg"
+    {
+       name: "Blockbuster",
+       url: "blockbuster.jpg",
+       type: "web"
+    },
+    {
+        name: "La3",
+        url: "la3.jpg",
+        type: "web"
+    },
+    {
+        name: "Tv Connect",
+        url: "tv-connect.jpg",
+        type: "product"
+    },
+    {
+        name: "Home Hub",
+        url: "home-hub.jpg",
+        type: "product"
+    },
+    {
+        name: "Xfinity Home",
+        url: "xfinity.jpg",
+        type: "product"
+    }
 ];
 
 var indexNumber;
@@ -51,14 +71,14 @@ var getRandomImage = function() {
 };
 
 var populatePortfolio = function() {
-    $("#portfolio-box").html("<img class='animated fadeIn' id='portfolio-img' src='./assets/images/portfolio/" + shownImage + "'><img id='left-arrow' src='./assets/images/left-arrow.png'><img id='right-arrow' src='./assets/images/right-arrow.png'>");
+    $("#portfolio-box").html("<img class='animated fadeIn' id='portfolio-img' src='./assets/images/portfolio/" + shownImage.url + "'><img id='left-arrow' src='./assets/images/left-arrow.png'><img id='right-arrow' src='./assets/images/right-arrow.png'>");
 };
 
 var loopDuration = subTitles.length * 3000;
 
 var shufflePortfolio = setInterval(function() {
         getRandomImage();
-        $("#portfolio-img").attr("src", "./assets/images/portfolio/" + shownImage);
+        $("#portfolio-img").attr("src", "./assets/images/portfolio/" + shownImage.url);
     }, loopDuration);
 
 $(document).on("click", "#left-arrow", function(){
@@ -91,9 +111,35 @@ populatePortfolio();
 
 // Portfolio Page
 
-for (var i = 0; i < portfolioImages.length; i++) {
-    $("#portfolio-container").prepend("<div class='portfolio-item'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[i] + "'></div>");
-}
+for (var j = 0; j < portfolioImages.length; j++) {
+    if (portfolioImages[j].type === "web") {
+        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].url + "'></div>");
+    }
+    else if (portfolioImages[j].type === "product") {
+        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-product'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].url + "'></div>");
+    };
+};
+
+$(".tab-links").on("click", function() {
+    if ($(this).data("name") === "all-button") {
+        $(".portfolio-web").show();
+        $(".portfolio-product").show();
+        $(".tab-links").removeClass("tab-selected");
+        $(this).addClass("tab-selected");
+    }
+    else if ($(this).data("name") === "web-button") {
+        $(".portfolio-web").show();
+        $(".portfolio-product").hide();
+        $(".tab-links").removeClass("tab-selected");
+        $(this).addClass("tab-selected");
+    }
+    else if ($(this).data("name") === "product-button") {
+        $(".portfolio-web").hide();
+        $(".portfolio-product").show();
+        $(".tab-links").removeClass("tab-selected");
+        $(this).addClass("tab-selected");
+    };
+});
 
 
 });

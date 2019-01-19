@@ -71,17 +71,48 @@ a, a:visited {
     box-shadow: 0px 10px 13px -7px #000000, -1px -1px 9px 0px rgba(107,107,107,0);
 }
 
+#filters {
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    padding: 14px 28px;
+    transition: 0.3s;
+  }
+  
+button:hover {
+    font-weight: bold;
+  }
+
+button:active {
+    background-color: white;
+}
+
+.tab-selected {
+    background-color: white;
+}
+
 #portfolio-container {
     width: 1080px;
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .portfolio-item {
     width: 500px;
-    padding: 20px;
+    padding: 10px 10px 25px 10px;
 }
 
 .portfolio-img {
-    width: 500px;
+    width: 480px;
+    -webkit-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.5); 
+    box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.5);
 }
