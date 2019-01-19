@@ -94,7 +94,7 @@ a, a:visited {
     position: relative;
 }
 
-#portfolio-img {
+.portfolio-img {
     z-index: 1;
 }
 
@@ -274,7 +274,7 @@ a, a:visited {
         height: 185px;
     }
 
-    #portfolio-img {
+    .portfolio-img {
         width: 270px;
         height: 185px;
     }

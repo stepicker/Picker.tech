@@ -37,28 +37,43 @@ loopSubTitles();
 var portfolioImages = [
     {
        name: "Blockbuster",
-       url: "blockbuster.jpg",
+       file: "blockbuster.jpg",
        type: "web"
     },
     {
         name: "La3",
-        url: "la3.jpg",
+        file: "la3.jpg",
         type: "web"
     },
     {
         name: "Tv Connect",
-        url: "tv-connect.jpg",
+        file: "tv-connect.jpg",
         type: "product"
     },
     {
         name: "Home Hub",
-        url: "home-hub.jpg",
+        file: "home-hub.jpg",
         type: "product"
     },
     {
         name: "Xfinity Home",
-        url: "xfinity.jpg",
+        file: "xfinity.jpg",
         type: "product"
+    },
+    {
+        name: "Javascript Games",
+        file: "js-games.jpg",
+        type: "web"
+    },
+    {
+        name: "Giphy API",
+        file: "giphy-api.jpg",
+        type: "web"
+    },
+    {
+        name: "Movie Wish List",
+        file: "movie-wish-list.jpg",
+        type: "web"
     }
 ];
 
@@ -71,14 +86,14 @@ var getRandomImage = function() {
 };
 
 var populatePortfolio = function() {
-    $("#portfolio-box").html("<img class='animated fadeIn' id='portfolio-img' src='./assets/images/portfolio/" + shownImage.url + "'><img id='left-arrow' src='./assets/images/left-arrow.png'><img id='right-arrow' src='./assets/images/right-arrow.png'>");
+    $("#portfolio-box").html("<img class='portfolio-img animated fadeIn' id='portfolio-img' title='" + shownImage.name + "' src='./assets/images/portfolio/" + shownImage.file + "'><img id='left-arrow' src='./assets/images/left-arrow.png'><img id='right-arrow' src='./assets/images/right-arrow.png'>");
 };
 
 var loopDuration = subTitles.length * 3000;
 
 var shufflePortfolio = setInterval(function() {
         getRandomImage();
-        $("#portfolio-img").attr("src", "./assets/images/portfolio/" + shownImage.url);
+        $("#portfolio-img").attr("src", "./assets/images/portfolio/" + shownImage.file);
     }, loopDuration);
 
 $(document).on("click", "#left-arrow", function(){
@@ -113,10 +128,10 @@ populatePortfolio();
 
 for (var j = 0; j < portfolioImages.length; j++) {
     if (portfolioImages[j].type === "web") {
-        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].url + "'></div>");
+        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "' title='" + portfolioImages[j].name + "'></div>");
     }
     else if (portfolioImages[j].type === "product") {
-        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-product'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].url + "'></div>");
+        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-product'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "' title='" + portfolioImages[j].name + "'></div>");
     };
 };
 

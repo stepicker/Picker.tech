@@ -101,7 +101,7 @@ button:active {
     background-color: white;
 }
 
-#portfolio-container #form-container {
+#portfolio-container {
     width: 1080px;
     display: flex;
     flex-wrap: wrap;
@@ -121,9 +121,13 @@ button:active {
 
 /* Specific styling for the Contact page */
 
-#contact-form {
+#form-container {
+    width: 1080px;
+    padding: 20px;
+}
+
+#contact-form, #contact-intro {
 	padding: 50px;
-	height: 500px;
 }
 
 input {
