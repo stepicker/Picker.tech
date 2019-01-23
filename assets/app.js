@@ -36,43 +36,47 @@ loopSubTitles();
  
 var portfolioImages = [
     {
-       name: "Blockbuster",
+       name: "Blockbuster Italy - Web Portal",
+       description: "As Client/Project Manager at LBi Italy, I directed the evolution of Blockbuster's on-line presence for over two years, from the first web portal to a complete e-commerce solution.",
        file: "blockbuster.jpg",
        type: "web"
     },
     {
-        name: "La3",
+        name: "La3 - Web Portal",
+        description: "As Client/Project Manager at LBi Italy, I led a cross-functional team to develop in record time a brand-new web portal for the launch of 3 Italy’s Mobile TV, including a multi-feed online TV Guide.",
         file: "la3.jpg",
         type: "web"
     },
     {
-        name: "Tv Connect",
+        name: "Tv Connect ™",
+        description: "As Senior Product Manager at Vodafone Italy, I led the end-to-end development of Vodafone Internet TV, a hybrid set-top box with DTT tuners, DVR, Catch-up TV widgets, multi-screen experience and DLNA.",
         file: "tv-connect.jpg",
         type: "product"
     },
     {
-        name: "Home Hub",
+        name: "HomeCloud ™",
+        description: "As Global Product Manager at Vodafone Group, I directed an 18-month open innovation effort to develop Vodafone HomeCloud™, a digital storage device with real-time media transcoding, recipient of the Connected Home Design & Technology Innovation Award in 2012.",
         file: "home-hub.jpg",
         type: "product"
     },
     {
-        name: "Xfinity Home",
+        name: "Xfinity Home - Device Ecosystem",
+        description: "As Director of Product Management at Comcast, I led the end-to-end development of a new device ecosystem for Home Security and Automation, directing and coaching a team of Senior Managers while coordinating cross-functional programs.",
         file: "xfinity.jpg",
         type: "product"
     },
     {
         name: "Javascript Games",
+        description: "During my first two months at the Penn Web Development Bootcamp, I created a number of games to solidify my learning of Javascript and jQuery.",
         file: "js-games.jpg",
-        type: "web"
-    },
-    {
-        name: "Giphy API",
-        file: "giphy-api.jpg",
+        github: "https://github.com/stepicker/TriviaGame",
         type: "web"
     },
     {
         name: "Movie Wish List",
+        description: "Team Project using a combination of Javascript and APIs to create a movie search-engine, play trailers and allow users to save a wish-list of movies to watch.",
         file: "movie-wish-list.jpg",
+        github: "https://github.com/fernandamarr/Project-1",
         type: "web"
     }
 ];
@@ -127,12 +131,17 @@ populatePortfolio();
 // Portfolio Page
 
 for (var j = 0; j < portfolioImages.length; j++) {
-    if (portfolioImages[j].type === "web") {
-        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "' title='" + portfolioImages[j].name + "'></div>");
+
+    if (portfolioImages[j].type === "web" && portfolioImages[j].github) {
+        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "'><div class='portfolio-overlay'><h4>" + portfolioImages[j].name + "</h4><h5>" + portfolioImages[j].description + "</h5><a href='" + portfolioImages[j].github + "' target='_blank'><h6>See the code on GitHub</h6></a></div></div>");
+    }
+    else if (portfolioImages[j].type === "web") {
+        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "'><div class='portfolio-overlay'><h4>" + portfolioImages[j].name + "</h4><h5>" + portfolioImages[j].description + "</h5></div></div>");
     }
     else if (portfolioImages[j].type === "product") {
-        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-product'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "' title='" + portfolioImages[j].name + "'></div>");
+        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-product'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "'><div class='portfolio-overlay'><h4>" + portfolioImages[j].name + "</h4><h5>" + portfolioImages[j].description + "</h5></div></div>");
     };
+
 };
 
 $(".tab-links").on("click", function() {

@@ -138,49 +138,49 @@ a, a:visited {
 #html-img {
     position: absolute;
     top: 25px;
-    left: 35px;
+    left: 50px;
 }
 
 #bootstrap-img {
     position: absolute;
-    top: 125px;
-    left: 85px;
+    top: 120px;
+    left: 105px;
 }
 
 #jquery-img {
     position: absolute;
-    top: 150px;
-    left: 10px;
+    top: 165px;
+    left: 30px;
 }
 
 #ajax-img {
     position: absolute;
-    bottom: 150px;
-    right: 70px;
+    bottom: 145px;
+    left: 100px;
 }
 
 #json-img {
     position: absolute;
     bottom: 140px;
-    right: 15px;
+    right: 25px;
 }
 
 #node-img {
     position: absolute;
     bottom: 70px;
-    left: 80px;
+    left: 90px;
 }
 
 #scrum-img {
     position: absolute;
-    bottom: 10px;
-    left: 20px;
+    bottom: 20px;
+    left: 25px;
 }
 
 #lean-img {
     position: absolute;
-    bottom: 10px;
-    right: 20px;
+    bottom: 20px;
+    right: 25px;
 }
 
 .bottom-box, #portfolio-box {
