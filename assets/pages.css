@@ -50,6 +50,7 @@ a, a:visited {
     width: 135px;
     height: 90px;
     color: white;
+    position: relative;
     padding: 10px 20px 10px 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -62,6 +63,19 @@ a, a:visited {
 
 .darker-menu-item {
     background-color: #0A627F;
+}
+
+.menu-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+}
+
+.menu-item:hover .menu-icon {
+    opacity: 0.7;
 }
 
 #page-content {
@@ -134,6 +148,7 @@ button:active {
 
 .portfolio-item:hover .portfolio-overlay {
     opacity: 0.9;
+    transition: .5s ease;
 }
 
 h4 {
@@ -151,9 +166,14 @@ h5 {
     margin: 20px 10px;
 }
 
-h6 {
-    font-size: 13pt;
-    text-align: center;
+#see-on-github {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#github-icon {
+    margin-left: 10px;
 }
 
 /* Specific styling for the Contact page */
@@ -190,4 +210,67 @@ textarea {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 15px;
     border: none;
+}
+
+
+/* Responsiveness settings - three columns */
+
+@media screen and (max-width: 1080px) {
+
+    #main-container {
+        width: 810px;
+        position: relative;
+        margin: 10px auto 10px auto;
+        top: 0;
+        left: 0;
+    }
+
+    #title-box, #menu-bar, #page-content, #portfolio-container, #form-container {
+        width: 810px;
+    }
+
+    .portfolio-item {
+        margin: 25px;
+    }
+
+}
+
+/* Responsiveness settings - two columns */
+
+@media screen and (max-width: 840px) {
+
+    #main-container, #menu-bar, #page-content, #portfolio-container, #form-container {
+        width: 540px;
+    }
+
+    #title-box {
+        width: 270px;
+    }
+
+    #portfolio-container {
+        padding: 15px 0;
+    }
+
+    .portfolio-item {
+        margin: 15px auto 15px auto;
+    }
+
+}
+
+/* Responsiveness settings - one column */
+
+@media screen and (max-width: 570px) {
+
+    #title-box, #main-container, #menu-bar, #page-content, #portfolio-container, #form-container {
+        width: 360px;
+    }
+
+    .menu-item {
+        width: 120px;
+    }
+
+    #portfolio-container {
+        padding: 5px 0;
+    }
+
 }

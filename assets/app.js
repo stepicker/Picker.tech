@@ -133,7 +133,7 @@ populatePortfolio();
 for (var j = 0; j < portfolioImages.length; j++) {
 
     if (portfolioImages[j].type === "web" && portfolioImages[j].github) {
-        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "'><div class='portfolio-overlay'><h4>" + portfolioImages[j].name + "</h4><h5>" + portfolioImages[j].description + "</h5><a href='" + portfolioImages[j].github + "' target='_blank'><h6>See the code on GitHub</h6></a></div></div>");
+        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "'><div class='portfolio-overlay'><h4>" + portfolioImages[j].name + "</h4><h5>" + portfolioImages[j].description + "</h5><a href='" + portfolioImages[j].github + "' target='_blank'><div id='see-on-github'><span>See the code</span><img src='./assets/images/github.png' id='github-icon'></div></a></div></div>");
     }
     else if (portfolioImages[j].type === "web") {
         $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "'><div class='portfolio-overlay'><h4>" + portfolioImages[j].name + "</h4><h5>" + portfolioImages[j].description + "</h5></div></div>");
