@@ -49,7 +49,7 @@ var portfolioImages = [
     },
     {
         name: "Tv Connect ™",
-        description: "As Senior Product Manager at Vodafone Italy, I led the end-to-end development of Vodafone Internet TV, a hybrid set-top box with DTT tuners, DVR, Catch-up TV widgets, multi-screen experience and DLNA.",
+        description: "As Senior Product Manager at Vodafone Italy, I led the end-to-end development of Vodafone Tv Connect ™, a hybrid set-top box with DTT tuners, DVR, Catch-up TV widgets, multi-screen experience and DLNA.",
         file: "tv-connect.jpg",
         type: "product"
     },
@@ -61,13 +61,13 @@ var portfolioImages = [
     },
     {
         name: "Xfinity Home - Device Ecosystem",
-        description: "As Director of Product Management at Comcast, I led the end-to-end development of a new device ecosystem for Home Security and Automation, directing and coaching a team of Senior Managers while coordinating cross-functional programs.",
+        description: "As Director of Product Management at Xfinity Home by Comcast, I led the end-to-end development of a new device ecosystem for Home Security and Automation, directing and coaching a team of Senior Managers while coordinating cross-functional programs.",
         file: "xfinity.jpg",
         type: "product"
     },
     {
         name: "Javascript Games",
-        description: "During my first two months at the Penn Web Development Bootcamp, I created a number of games to solidify my learning of Javascript and jQuery.",
+        description: "Web-based games to solidify my learning of Javascript and jQuery, created during my first two months at the Penn Web Development Bootcamp",
         file: "js-games.jpg",
         github: "https://github.com/stepicker/TriviaGame",
         type: "web"
