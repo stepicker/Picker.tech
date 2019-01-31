@@ -73,10 +73,10 @@ var portfolioImages = [
         type: "web"
     },
     {
-        name: "Movie Wish List",
-        description: "Team Project using a combination of Javascript and APIs to create a movie search-engine, play trailers and allow users to save a wish-list of movies to watch.",
-        file: "movie-wish-list.jpg",
-        github: "https://github.com/fernandamarr/Project-1",
+        name: "Movie Picker",
+        description: "Personal project using a combination of Javascript and APIs to create a movie search-engine, play trailers and allow users to save a wish-list of movies to watch.",
+        file: "movie-picker.jpg",
+        github: "https://github.com/stepicker/Movie-Picker",
         type: "web"
     }
 ];
