@@ -84,8 +84,9 @@ a, a:visited {
 }
 
 #title {
-    font-family: 'Kalam', cursive;
-    font-size: 46pt;
+    font-family: 'Rock Salt', cursive;
+    font-size: 34pt;
+    line-height: 70px;
 }
 
 #subtitle {
