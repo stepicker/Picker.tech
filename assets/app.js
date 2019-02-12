@@ -37,31 +37,31 @@ loopSubTitles();
 var portfolioImages = [
     {
        name: "Blockbuster Italy - Web Portal",
-       description: "As Client/Project Manager at LBi Italy, I directed the evolution of Blockbuster's on-line presence for over two years, from the first web portal to a complete e-commerce solution.",
+       description: "The evolution of Blockbuster Italy's on-line presence for over two years (2004 - 2006), from the first web portal to a complete e-commerce solution, which I directed as Client/Project Manager at LBi Italy",
        file: "blockbuster.jpg",
        type: "web"
     },
     {
         name: "La3 - Web Portal",
-        description: "As Client/Project Manager at LBi Italy, I led a cross-functional team to develop in record time a brand-new web portal for the launch of 3 Italy’s Mobile TV, including a multi-feed online TV Guide.",
+        description: "A brand-new web portal for the launch of 3 Italy’s Mobile TV, including a multi-source online TV Guide. As Client/Project Manager at LBi Italy, I led a cross-functional team to develop it on budget and in record time.",
         file: "la3.jpg",
         type: "web"
     },
     {
         name: "Tv Connect ™",
-        description: "As Senior Product Manager at Vodafone Italy, I led the end-to-end development of Vodafone Tv Connect ™, a hybrid set-top box with DTT tuners, DVR, Catch-up TV widgets, multi-screen experience and DLNA.",
+        description: "End-to-end development of Vodafone Tv Connect ™, a hybrid set-top box with DTT tuners, DVR, Catch-up TV widgets, multi-screen experience and DLNA. I led this project as Senior Product Manager at Vodafone Italy.",
         file: "tv-connect.jpg",
         type: "product"
     },
     {
         name: "HomeCloud ™",
-        description: "As Global Product Manager at Vodafone Group, I directed an 18-month open innovation effort to develop Vodafone HomeCloud™, a digital storage device with real-time media transcoding, recipient of the Connected Home Design & Technology Innovation Award in 2012.",
+        description: "An 18-month open innovation effort to develop Vodafone HomeCloud™, a digital storage device with real-time media transcoding, recipient of the Connected Home Design & Technology Innovation Award in 2012. I directed this project as Global Product Manager at Vodafone Group.",
         file: "home-hub.jpg",
         type: "product"
     },
     {
         name: "Xfinity Home - Device Ecosystem",
-        description: "As Director of Product Management at Xfinity Home by Comcast, I led the end-to-end development of a new device ecosystem for Home Security and Automation, directing and coaching a team of Senior Managers while coordinating cross-functional programs.",
+        description: "End-to-end development of a new device ecosystem for Home Security and Automation, directing and coaching a team of Senior Managers while coordinating cross-functional programs as Director of Product Management at Comcast.",
         file: "xfinity.jpg",
         type: "product"
     },
@@ -74,7 +74,7 @@ var portfolioImages = [
     },
     {
         name: "Movie Picker",
-        description: "Personal project using a combination of Javascript and APIs to create a movie search-engine, play trailers and allow users to save a wish-list of movies to watch.",
+        description: "Personal project using a combination of Javascript and APIs to create a movie search-engine, play trailers and allow users to save a wish-list of movies to watch. Also using Firebase authentication and database.",
         file: "movie-picker.jpg",
         github: "https://github.com/stepicker/Movie-Picker",
         type: "web"
