@@ -39,13 +39,13 @@ var portfolioImages = [
        name: "Blockbuster Italy - Web Portal",
        description: "The evolution of Blockbuster Italy's on-line presence for over two years (2004 - 2006), from the first web portal to a complete e-commerce solution, which I directed as Client/Project Manager at LBi Italy",
        file: "blockbuster.jpg",
-       type: "web"
+       type: "product"
     },
     {
         name: "La3 - Web Portal",
         description: "Brand-new web portal for the launch of 3 Italy’s Mobile TV, including a multi-feed online TV Guide. As Client/Project Manager at LBi Italy, I led a cross-functional team to develop it on budget and in record time.",
         file: "la3.jpg",
-        type: "web"
+        type: "product"
     },
     {
         name: "Tv Connect ™",
@@ -61,13 +61,13 @@ var portfolioImages = [
     },
     {
         name: "Xfinity Home - Device Ecosystem",
-        description: "End-to-end development of a new device ecosystem for Home Security and Automation, directing and coaching a team of Senior Managers in my role as Director of Product Management at Comcast.",
+        description: "End-to-end development of a new device ecosystem for Home Security and Automation, directing and coaching a team of Senior Managers in my role as Director of Product Management at Comcast",
         file: "xfinity.jpg",
         type: "product"
     },
     {
         name: "Javascript Games",
-        description: "Web-based games to solidify my learning of Javascript and jQuery, created during my first two months at the Penn Web Development Bootcamp",
+        description: "Web-based games to solidify my learning of Javascript and jQuery, created during my first two months at the Penn Web Development Bootcamp in 2018",
         file: "js-games.jpg",
         github: "https://github.com/stepicker/TriviaGame",
         type: "web"
@@ -133,13 +133,13 @@ populatePortfolio();
 for (var j = 0; j < portfolioImages.length; j++) {
 
     if (portfolioImages[j].type === "web" && portfolioImages[j].github) {
-        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "'><div class='portfolio-overlay'><h4>" + portfolioImages[j].name + "</h4><h5>" + portfolioImages[j].description + "</h5><a href='" + portfolioImages[j].github + "' target='_blank'><div id='see-on-github'><span>See the code</span><img src='./assets/images/github.png' id='github-icon'></div></a></div></div>");
+        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='../assets/images/portfolio/" + portfolioImages[j].file + "'><div class='portfolio-overlay'><h4>" + portfolioImages[j].name + "</h4><h5>" + portfolioImages[j].description + "</h5><a href='" + portfolioImages[j].github + "' target='_blank'><div id='see-on-github'><span>See the code</span><img src='../assets/images/github.png' id='github-icon'></div></a></div></div>");
     }
     else if (portfolioImages[j].type === "web") {
-        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "'><div class='portfolio-overlay'><h4>" + portfolioImages[j].name + "</h4><h5>" + portfolioImages[j].description + "</h5></div></div>");
+        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-web'><img class='portfolio-img' src='../assets/images/portfolio/" + portfolioImages[j].file + "'><div class='portfolio-overlay'><h4>" + portfolioImages[j].name + "</h4><h5>" + portfolioImages[j].description + "</h5></div></div>");
     }
     else if (portfolioImages[j].type === "product") {
-        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-product'><img class='portfolio-img' src='./assets/images/portfolio/" + portfolioImages[j].file + "'><div class='portfolio-overlay'><h4>" + portfolioImages[j].name + "</h4><h5>" + portfolioImages[j].description + "</h5></div></div>");
+        $("#portfolio-container").prepend("<div class='portfolio-item portfolio-product'><img class='portfolio-img' src='../assets/images/portfolio/" + portfolioImages[j].file + "'><div class='portfolio-overlay'><h4>" + portfolioImages[j].name + "</h4><h5>" + portfolioImages[j].description + "</h5></div></div>");
     };
 
 };
