@@ -78,6 +78,13 @@ var portfolioImages = [
         file: "movie-picker.jpg",
         github: "https://github.com/stepicker/Movie-Picker",
         type: "web"
+    },
+    {
+        name: "Parking Pal",
+        description: "Team project to develop a social app for Philadelphia neighbors, who can share the availability of permit-parking spots to reduce stress and congestion",
+        file: "parking-pal.jpg",
+        github: "https://github.com/bgee269/Project2",
+        type: "web"
     }
 ];
 
