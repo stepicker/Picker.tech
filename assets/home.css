@@ -156,33 +156,21 @@ a, a:visited {
     left: 50px;
 }
 
-#bootstrap-img {
-    position: absolute;
-    top: 120px;
-    left: 105px;
-}
-
 #jquery-img {
     position: absolute;
-    top: 165px;
-    left: 30px;
+    top: 145px;
+    left: 50px;
 }
 
-#ajax-img {
+#react-img {
     position: absolute;
-    bottom: 145px;
-    left: 100px;
-}
-
-#json-img {
-    position: absolute;
-    bottom: 140px;
-    right: 25px;
+    top: 130px;
+    right: 50px;
 }
 
 #node-img {
     position: absolute;
-    bottom: 70px;
+    bottom: 80px;
     left: 90px;
 }
 
