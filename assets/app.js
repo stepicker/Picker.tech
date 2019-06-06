@@ -83,7 +83,6 @@ var portfolioImages = [
         name: "Breadcrumbs",
         description: "Web app for circles of connected people to keep track of each other's location, leveraging the GPS tracker I am currently prototyping and testing at my start-up, IoT Slash",
         file: "breadcrumbs.jpg",
-        github: "https://github.com/stepicker/Breadcrumbs",
         type: "web"
     }
 ];
