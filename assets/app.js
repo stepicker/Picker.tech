@@ -37,7 +37,7 @@ loopSubTitles();
 var portfolioImages = [
     {
        name: "Blockbuster Italy - Web Portal",
-       description: "The evolution of Blockbuster Italy's on-line presence for over two years (2004 - 2006), from the first web portal to a complete e-commerce solution, which I directed as Client/Project Manager at LBi Italy",
+       description: "The evolution of Blockbuster Italy's on-line presence for over two years (2004 - 2006), from the first web portal to a complete e-commerce solution, which I directed as Client/Project Manager at LBi Italy.",
        file: "blockbuster.jpg",
        type: "product"
     },
@@ -61,27 +61,27 @@ var portfolioImages = [
     },
     {
         name: "Xfinity Home - Device Ecosystem",
-        description: "End-to-end development of a new device ecosystem for Home Security and Automation, directing and coaching a team of Senior Managers in my role as Director of Product Management at Comcast",
+        description: "End-to-end development of a new device ecosystem for Home Security and Automation, directing and coaching a team of Senior Managers in my role of Director of Product Management at Comcast.",
         file: "xfinity.jpg",
         type: "product"
     },
     {
         name: "Javascript Games",
-        description: "Web-based games to solidify my learning of Javascript and jQuery, created during my first two months at the Penn Web Development Bootcamp in 2018",
+        description: "Web-based games to solidify my learning of Javascript and jQuery, created during my first two months at the Penn Web Development Bootcamp in 2018.",
         file: "js-games.jpg",
         github: "https://github.com/stepicker/TriviaGame",
         type: "web"
     },
     {
         name: "Movie Picker",
-        description: "Personal project using a combination of Javascript and APIs to create a movie search-engine, play trailers and allow users to save a wish-list of movies to watch. Also using Firebase authentication and database.",
+        description: "Personal project using a combination of Javascript and APIs to create a movie search-engine, play trailers and allow users to save a wish-list of movies to watch. Also using Firebase authentication and real-time database.",
         file: "movie-picker.jpg",
         github: "https://github.com/stepicker/Movie-Picker",
         type: "web"
     },
     {
         name: "Breadcrumbs",
-        description: "Web app for circles of connected people to keep track of each other's location, leveraging the GPS tracker I am currently prototyping and testing at my start-up, IoT Slash",
+        description: "Web app for circles of people to keep track of each other's location, built on the MERN stack as final project for my Bootcamp at Penn University. The app relies on a GPS tracker I am currently prototyping at my start-up, IoT Slash.",
         file: "breadcrumbs.jpg",
         type: "web"
     }
