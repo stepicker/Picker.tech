@@ -87,7 +87,7 @@ var portfolioImages = [
     },
     {
         name: "Wyze Cam Accessories",
-        description: "Silicone Skin and Pencil Holder designed to host a Wyze security camera, making it more discreet in any room of the house. Both are best-selling accessories for the popular Wyze Cam on Amazon.com, designed and distributed by my start-up, IoT Slash",
+        description: "Silicone Skin and Pencil Holder designed to host a Wyze security camera, making it more discreet in any room of the house. Best-selling accessories for the popular Wyze Cam on Amazon.com, designed and distributed by my start-up, IoT Slash",
         file: "wyze-accessories.jpg",
         type: "product"
     },
