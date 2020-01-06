@@ -37,52 +37,64 @@ loopSubTitles();
 var portfolioImages = [
     {
        name: "Blockbuster Italy - Web Portal",
-       description: "The evolution of Blockbuster Italy's on-line presence for over two years (2004 - 2006), from the first web portal to a complete e-commerce solution, which I directed as Client/Project Manager at LBi Italy.",
+       description: "The evolution of Blockbuster Italy's on-line presence for over two years (2004 - 2006), from the first web portal to a complete e-commerce solution, which I directed as Client/Project Manager at LBi Italy",
        file: "blockbuster.jpg",
        type: "product"
     },
     {
         name: "La3 - Web Portal",
-        description: "Brand-new web portal for the launch of 3 Italy’s Mobile TV, including a multi-feed online TV Guide. As Client/Project Manager at LBi Italy, I led a cross-functional team to develop it on budget and in record time.",
+        description: "Brand-new web portal for the launch of 3 Italy’s Mobile TV, including a multi-feed online TV Guide. As Client/Project Manager at LBi Italy, I led a cross-functional team to develop it on budget and in record time",
         file: "la3.jpg",
         type: "product"
     },
     {
         name: "Tv Connect ™",
-        description: "End-to-end development of a hybrid set-top box with DTT tuners, DVR, Catch-up TV widgets, multi-screen experience and DLNA. I led this project as Senior Product Manager at Vodafone Italy.",
+        description: "End-to-end development of a hybrid set-top box with DTT tuners, DVR, Catch-up TV widgets, multi-screen experience and DLNA. I led this project as Senior Product Manager at Vodafone Italy",
         file: "tv-connect.jpg",
         type: "product"
     },
     {
         name: "HomeCloud ™",
-        description: "Open-innovation effort to develop a digital storage device with real-time media transcoding, recipient of the Connected Home Design & Technology Innovation Award in 2012. I directed this project as Global Product Manager at Vodafone Group.",
+        description: "Open-innovation effort to develop a digital storage device with real-time media transcoding, recipient of the Connected Home Design & Technology Innovation Award in 2012. I directed this project as Global Product Manager at Vodafone Group",
         file: "home-hub.jpg",
         type: "product"
     },
     {
         name: "Xfinity Home - Device Ecosystem",
-        description: "End-to-end development of a new device ecosystem for Home Security and Automation, directing and coaching a team of Senior Managers in my role of Director of Product Management at Comcast.",
+        description: "End-to-end development of a new device ecosystem for Home Security and Automation, directing and coaching a team of Senior Managers in my role of Director of Product Management at Comcast",
         file: "xfinity.jpg",
         type: "product"
     },
     {
         name: "Javascript Games",
-        description: "Web-based games to solidify my learning of Javascript and jQuery, created during my first two months at the Penn Web Development Bootcamp in 2018.",
+        description: "Web-based games to solidify my learning of Javascript, created during my first two months at the Penn Web Development Bootcamp in 2018",
         file: "js-games.jpg",
         github: "https://github.com/stepicker/TriviaGame",
         type: "web"
     },
     {
         name: "Movie Picker",
-        description: "Personal project using a combination of Javascript and APIs to create a movie search-engine, play trailers and allow users to save a wish-list of movies to watch. Also using Firebase authentication and real-time database.",
+        description: "Personal project using public APIs to create a movie search-engine with a personal wish-list. Original version using Firebase authentication and real-time database. Newer version using AWS Cognito / API Gateway / Lambda / DynamoDB",
         file: "movie-picker.jpg",
         github: "https://github.com/stepicker/Movie-Picker",
         type: "web"
     },
     {
         name: "Breadcrumbs",
-        description: "Web app for circles of people to keep track of each other's location, built on the MERN stack as final project for my Bootcamp at Penn University. The app relies on a GPS tracker I am currently prototyping at my start-up, IoT Slash.",
+        description: "Web app for circles of people to keep track of each other's location, built on the MERN stack as final project for my Bootcamp at Penn University. The app relies on a GPS tracker prototyped at my start-up, IoT Slash",
         file: "breadcrumbs.jpg",
+        type: "web"
+    },
+    {
+        name: "Wyze Cam Accessories",
+        description: "Silicone Skin and Pencil Holder designed to host a Wyze security camera, making it more discreet in any room of the house. Both are best-selling accessories for the popular Wyze Cam on Amazon.com, designed and distributed by my start-up, IoT Slash",
+        file: "wyze-accessories.jpg",
+        type: "product"
+    },
+    {
+        name: "Deerfield Electric",
+        description: "Employee Portal for an electrical contracting company, with features such as daily schedule and timesheet reporting. Developed as a CRUD App based on MongoDB Stitch / Atlas",
+        file: "deerfield.jpg",
         type: "web"
     }
 ];
