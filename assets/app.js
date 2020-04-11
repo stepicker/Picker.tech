@@ -67,14 +67,6 @@ $(document).ready(function () {
 			type: 'product',
 		},
 		{
-			name: 'Javascript Games',
-			description:
-				'Web-based games to solidify my learning of Javascript, created during my first two months at the Penn Web Development Bootcamp in 2018',
-			file: 'js-games.jpg',
-			github: 'https://github.com/stepicker/TriviaGame',
-			type: 'web',
-		},
-		{
 			name: 'Movie Picker',
 			description:
 				'Personal project using public APIs to create a movie search-engine with a personal wish-list. Original version using Firebase authentication and real-time database. Newer version using AWS Cognito / Lambda / DynamoDB',
